@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  2 FEB 2016 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  9 FEB 2016 15:01
 entering extended mode
  \write18 enabled.
  Source specials enabled.
@@ -1100,27 +1100,8 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.67 \newpage
-              [1] (./descriptive.tex [2]
-! Undefined control sequence.
-l.105 \itemThe
-               chart below shows the cumulative distribution of the time (in...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(./img/descriptive/time_exam_ogive.tex)
-! Undefined control sequence.
-l.118 \itemIn
-              a study about the children growth two samples where drawn, one...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[3] (./img/descriptive/bmi_gender_histogram.tex)
+              [1] (./descriptive.tex [2] (./img/descriptive/time_exam_ogive.tex
+) [3] (./img/descriptive/bmi_gender_histogram.tex)
 (./img/descriptive/age_marital_status_boxplot.tex) [4]
 Underfull \hbox (badness 1668) in paragraph at lines 217--222
 \OML/cmm/m/it/10 B$\OT1/cmr/m/n/10 : $[] \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 =
@@ -1148,8 +1129,8 @@ Package rerunfilecheck Info: File `statistics_exercises.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 27160 strings out of 494903
- 518364 string characters out of 6178059
+ 27162 strings out of 494903
+ 518378 string characters out of 6178059
  588540 words of memory out of 5000000
  29937 multiletter control sequences out of 15000+600000
  14829 words of font info for 57 fonts, out of 8000000 for 9000
@@ -1168,10 +1149,10 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on statistics_exercises.pdf (7 pages, 171900 bytes).
+Output written on statistics_exercises.pdf (7 pages, 171899 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 71 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
