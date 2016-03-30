@@ -13,7 +13,7 @@
 \item Size of clothing.
 \item Subjects passed in a course. 
 \end{enumerate}
-
+ 
 \begin{sol}
 \begin{enumerate*}
 \item Quantitative continuous. 
@@ -52,7 +52,7 @@
 \item Draw the cumulative relative frequency bar chart and the polygon. 
 \end{enumerate}
 
-\item In a survey about the dependency of older people, 23 persons over 75 years were asked about the help they need in
+\item In survey about the dependency of older people, 23 persons over 75 years were asked about the help they need in
 daily life. 
 The answers were
 \begin{center}
@@ -115,23 +115,22 @@ attended in a medical dispensary.
 \item Percentile 32.
 \end{enumerate}
 
-% \begin{sol}
-% <<echo=FALSE>>=
-% x <- c(0, 1, 2, 1, 3, 0, 1, 0, 1, 2, 0, 1, 1, 1, 2, 0, 1, 3, 2, 1, 2, 1, 0, 1)
-% @
-% \begin{enumerate*}
-% \item $\bar x=\Sexpr{mean(x)}$ injuries.
-% \item $Me=\Sexpr{median(x)}$ injury.
-% \item $Mo=\Sexpr{Mode(x)}$ injury.
-% \item $Q_1=1$ injury, $Q_2=\Sexpr{quantile(x)[3]}$ injury and $Q_3=\Sexpr{quantile(x)[4]}$ injuries.
-% \item $P_{32}=\Sexpr{quantile(x,0.32)}$ injury.
-% \end{enumerate*}
-% \end{sol}
+\begin{sol}
+<<echo=FALSE>>=
+x <- c(0, 1, 2, 1, 3, 0, 1, 0, 1, 2, 0, 1, 1, 1, 2, 0, 1, 3, 2, 1, 2, 1, 0, 1)
+@
+\begin{enumerate*}
+\item $\bar x=\Sexpr{mean(x)}$ injuries.
+\item $Me=\Sexpr{median(x)}$ injury.
+\item $Mo=\Sexpr{Mode(x)}$ injury.
+\item $Q_1=1$ injury, $Q_2=\Sexpr{quantile(x)[3]}$ injury and $Q_3=\Sexpr{quantile(x)[4]}$ injuries.
+\item $P_{32}=\Sexpr{quantile(x,0.32)}$ injury.
+\end{enumerate*}
+\end{sol}
 
 
 \item The chart below shows the cumulative distribution of the time (in min)
-required by 66 students to do an exam.
-
+required by 20 students to do an exam.
 \begin{center}
 \resizebox{0.7\textwidth}{!}{\input{img/descriptive/time_exam_ogive}}
 \end{center}
@@ -142,19 +141,6 @@ required by 66 students to do an exam.
 \item Which is the time that best represent the time required by students in the sample to finish the exam? Is this
 value representative or not?
 \end{enumerate}
-
-
-% \begin{sol}
-% <<echo=FALSE>>=
-% x<-rep(c(15,45,75,105,135),c(9,6,14,26,11))
-% @
-% \begin{enumerate*}
-% \item 
-% \item
-% \item $\bar x=\Sexpr{mean(x)}$ min, $s=\Sexpr{round(stdev(x),4)}$ min and $cv=\Sexpr{cv(x)}$.
-% \end{enumerate*}
-% \end{sol}
-
 
 \item In a study about the children growth two samples where drawn, one for
 newborns and the other for one year old.

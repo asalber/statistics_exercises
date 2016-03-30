@@ -45,7 +45,7 @@
 
 % SOLUTIONS
 \newif\ifsolution
-% \solutiontrue  % Comment to hide solutions
+\solutiontrue  % Comment to hide solutions
 
 \newtheoremstyle{solution} % Theorem style name
 {-5pt} % Space above
@@ -101,6 +101,14 @@ linewidth=4pt]{solBox}
 \begin{document}
 \sloppy
 
+<<setup, include=FALSE, echo=FALSE, cache=FALSE>>=
+library(knitr)
+library(rk.Teaching)
+# set global chunk options
+opts_chunk$set(fig.path='img', fig.align='center', fig.show='hold')
+options(formatR.arrow=TRUE,width=90,digits=2)
+@
+
 \title{\vskip 2cm
 \Huge \textbf{\textsf{\quad \textcolor{blueceu}{EXERCISES OF STATISTICS}\quad}}\\
    \vskip 1cm
@@ -124,8 +132,6 @@ linewidth=4pt]{solBox}
 \newpage
 \tableofcontents
 \newpage
-
-\include{descriptive}
-\include{regression}
-\include{probability}
+<< child='descriptive.tex'>>=
+@
 \end{document}
