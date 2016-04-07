@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.9)  30 MAR 2016 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.9)  7 APR 2016 15:33
 entering extended mode
  \write18 enabled.
  Source specials enabled.
@@ -1499,8 +1499,8 @@ Package rerunfilecheck Info: File `statistics_exercises.out' has not changed.
 (rerunfilecheck)             Checksum: 1A86D0B2CE1BEAAB5915DB2DCB579E20;164.
  ) 
 Here is how much of TeX's memory you used:
- 40982 strings out of 494854
- 946878 string characters out of 6177756
+ 40991 strings out of 494854
+ 946950 string characters out of 6177756
  1156480 words of memory out of 5000000
  43372 multiletter control sequences out of 15000+600000
  14829 words of font info for 57 fonts, out of 8000000 for 9000
@@ -1520,10 +1520,10 @@ texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on statistics_exercises.pdf (12 pages, 206312 bytes).
+Output written on statistics_exercises.pdf (12 pages, 208073 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 162 named destinations out of 1000 (max. 500000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 171 named destinations out of 1000 (max. 500000)
  42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
