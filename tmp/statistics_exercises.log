@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.9)  7 APR 2016 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.9)  21 APR 2016 13:34
 entering extended mode
  \write18 enabled.
  Source specials enabled.
@@ -1320,7 +1320,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip141
 )
 (./statistics_exercises.aux (./descriptive.aux) (./regression.aux)
-(./probability.aux))
+(./probability.aux) (./discrete_random_variables.aux))
 \openout1 = `statistics_exercises.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -1435,7 +1435,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<img/logo_uspceu.pdf, id=23, 534.56714pt x 281.59201pt>
+<img/logo_uspceu.pdf, id=27, 534.56714pt x 281.59201pt>
 File: img/logo_uspceu.pdf Graphic file (type pdf)
 
 <use img/logo_uspceu.pdf>
@@ -1488,24 +1488,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--263
  (./probability.tex [10
 
 
-]) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
- (./statistics_exercises.aux
-(./descriptive.aux) (./regression.aux) (./probability.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+] [11]) [12]
+\openout2 = `discrete_random_variables.aux'.
+
+ (./discrete_random_variables.tex
+! Undefined control sequence.
+l.62 \iem
+          The chance of being cured with a treatment is $0.85$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[13
+
+
+]) [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+ (./statistics_exercises.aux (./descriptive.aux) (./regression.aux)
+(./probability.aux) (./discrete_random_variables.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `statistics_exercises.out' has not changed.
-(rerunfilecheck)             Checksum: 1A86D0B2CE1BEAAB5915DB2DCB579E20;164.
+(rerunfilecheck)             Checksum: 9D448E2BD23B73A001C9EE90C9850D10;224.
  ) 
 Here is how much of TeX's memory you used:
- 40991 strings out of 494854
- 946950 string characters out of 6177756
- 1156480 words of memory out of 5000000
- 43372 multiletter control sequences out of 15000+600000
- 14829 words of font info for 57 fonts, out of 8000000 for 9000
+ 41061 strings out of 494854
+ 947695 string characters out of 6177756
+ 1157130 words of memory out of 5000000
+ 43377 multiletter control sequences out of 15000+600000
+ 15175 words of font info for 58 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 62i,12n,77p,10409b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,77p,10409b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1519,11 +1535,12 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on statistics_exercises.pdf (12 pages, 208073 bytes).
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on statistics_exercises.pdf (15 pages, 227213 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 171 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 422 PDF objects out of 1000 (max. 8388607)
+ 384 compressed objects within 4 object streams
+ 228 named destinations out of 1000 (max. 500000)
+ 50 words of extra memory for PDF output out of 10000 (max. 10000000)
 
