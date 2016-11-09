@@ -6,7 +6,7 @@
 \usepackage[top=3cm, bottom=3cm, left=2.54cm, right=2.54cm, marginparwidth=2mm]{geometry}
 
 % COLORS
-\usepackage[table]{xcolor} 
+\usepackage[table]{xcolor}
 \definecolor{color1}{RGB}{5,161,230}
 \definecolor{color2}{RGB}{238,50,36}
 \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
@@ -80,7 +80,7 @@ innertopmargin=4pt,
 innerbottommargin=5pt,
 leftmargin=0pt,
 rightmargin=0pt,
-linewidth=4pt]{solBox}		
+linewidth=4pt]{solBox}
 
 \usepackage{comment}
 \ifsolution
@@ -91,7 +91,7 @@ linewidth=4pt]{solBox}
 
 % PDF
 \usepackage[colorlinks=true]{hyperref}
-\hypersetup{pdfauthor={Alfredo Sánchez Alberca (asalber@ceu.es)}, pdftitle={Ejercicios de Estad\'istica} } 
+\hypersetup{pdfauthor={Alfredo Sánchez Alberca (asalber@ceu.es)}, pdftitle={Ejercicios de Estad\'istica} }
 \usepackage{url}
 
 \renewcommand{\floatpagefraction}{.8}
@@ -125,9 +125,137 @@ linewidth=4pt]{solBox}
 \tableofcontents
 \newpage
 
-\include{descriptive}
-\include{regression}
-\include{probability}
-\include{discrete_random_variables}
-\include{continuous_random_variables}
+\input{descriptiva}
+\input{regresion}
+\input{probabilidad}
+\input{variables_aleatorias_discretas}
+\input{variables_aleatorias_continuas}
+\input{estimacion}
+
+\section{Estadística Descriptiva}
+\begin{enumerate}[leftmargin=*]
+\item \useproblem{des-57}
+\item \useproblem{des-3a}
+\item \useproblem{des-1a}
+\item \useproblem{des-24a}
+\item \useproblem{des-2a}
+\item \useproblem{des-13a}
+\item \useproblem{des-3b}
+\item \useproblem{des-56a}
+\item \useproblem{des-7}
+\item \useproblem{des-23}
+\item \useproblem{des-29}
+\item \useproblem{des-58}
+\item \useproblem{des-59}
+\item \useproblem{des-20}
+\item \useproblem{des-26}
+\item \useproblem{des-60}
+\item \useproblem{des-61}
+\end{enumerate}
+
+\section{Regresión y Correlación}
+\begin{enumerate}[leftmargin=*,resume]
+\item \useproblem{reg-45}
+\item \useproblem{reg-8a}
+\item \useproblem{reg-6}
+\item \useproblem{reg-3}
+\item \useproblem{reg-39}
+\item \useproblem{reg-10}
+\item \useproblem{reg-11}
+\item \useproblem{reg-32}
+\item \useproblem{reg-7}
+\item \useproblem{reg-25}
+\item \useproblem{reg-41}
+\item \useproblem{reg-24}
+\item \useproblem{reg-26}
+\item \useproblem{reg-27}
+\item \useproblem{reg-44}
+\end{enumerate}
+
+\section{Probabilidad}
+\begin{enumerate}[leftmargin=*,resume]
+\item \useproblem{pro-33}
+\item \useproblem{pro-46}
+\item \useproblem{pro-47}
+\item \useproblem{pro-48}
+\item \useproblem{pro-2}
+\item \useproblem{pro-3}
+\item \useproblem{pro-5}
+\item \useproblem{pro-8}
+\item \useproblem{pro-9}
+\item \useproblem{pro-11}
+\item \useproblem{pro-13}
+\item \useproblem{pro-17}
+\item \useproblem{pro-16}
+\item \useproblem{pro-49}
+\item \useproblem{pro-19}
+\item \useproblem{pro-44}
+\item \useproblem{pro-25}
+\item \useproblem{pro-50}
+\item \useproblem{pro-37}
+\item \useproblem{pro-45}
+\end{enumerate}
+
+\section{Variables Aleatorias Discretas}
+\begin{enumerate}[leftmargin=*,resume]
+\item \useproblem{vad-1}
+\item \useproblem{vad-2}
+\item \useproblem{vad-3}
+\item \useproblem{vad-5}
+\item \useproblem{vad-8}
+\item \useproblem{vad-7}
+\item \useproblem{vad-10}
+\item \useproblem{vad-11}
+\item \useproblem{vad-13}
+\item \useproblem{vad-15}
+\item \useproblem{vad-19}
+\item \useproblem{vad-38}
+\item \useproblem{vad-18}
+\item \useproblem{vad-22}
+\item \useproblem{vad-27}
+\item \useproblem{vad-28}
+\end{enumerate}
+
+\section{Variables Aleatorias Continuas}
+\begin{enumerate}[leftmargin=*,resume]
+\item \useproblem{vac-1}
+\item \useproblem{vac-2}
+\item \useproblem{vac-4}
+\item \useproblem{vac-6}
+\item \useproblem{vac-37}
+\item \useproblem{vac-38}
+\item \useproblem{vac-39}
+\item \useproblem{vac-11}
+\item \useproblem{vac-10}
+\item \useproblem{vac-16}
+\item \useproblem{vac-13}
+\item \useproblem{vac-17}
+\item \useproblem{vac-40}
+\item \useproblem{vac-41}
+\item \useproblem{vac-34}
+\end{enumerate}
+
+\section{Estimación de parámetros}
+\begin{enumerate}[leftmargin=*,resume]
+\item \useproblem{ico-1}
+\item \useproblem{ico-2}
+\item \useproblem{ico-3}
+\item \useproblem{ico-4}
+\item \useproblem{ico-7}
+\item \useproblem{ico-13}
+\item \useproblem{ico-14}
+\item \useproblem{ico-16}
+\item \useproblem{ico-21}
+\item \useproblem{ico-19}
+\item \useproblem{ico-23}
+\item \useproblem{ico-22}
+\item \useproblem{ico-27}
+\item \useproblem{ico-29}
+\end{enumerate}
+
+\vspace{2cm}
+
+\textsc{Nota}: Los problemas marcados con una estrella ($\bigstar$) son problemas de
+exámenes de otros años.
 \end{document}
+
