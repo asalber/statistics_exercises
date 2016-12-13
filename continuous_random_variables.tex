@@ -2,33 +2,33 @@
 
 \newproblem{vac-1}{gen}{}
 %ENUNCIADO
-{Una variable aleatoria continua $X$ tiene una función de densidad dada por:
+{The probability density function of a continuous random variable $X$ is 
 \[
 f(x)=
 \begin{cases}
-k(6-3x) & \text{si $0\leq x\leq 2$,} \\
-0 & \text{si  $x<0$ o $x>2$.}
+k(6-3x) & \mbox{if $0\leq x\leq 2$,} \\
+0 & \mbox{if  $x<0$ or $x>2$.}
 \end{cases}
 \]
 \begin{enumerate}
-\item  Determinar el valor de $k$.
-\item  Hallar $P(X\leq 1)$; $P(X>2)$; $P(X=1/4)$; $P(1/3\leq X\leq 2/3)$.
-\item  Calcular $\mu$ y $\sigma$.
-\item  Hallar la función de distribución $F(x)$.
+\item Compute the value for $k$.
+\item Compute $P(X\leq 1)$; $P(X>2)$; $P(X=1/4)$; $P(1/3\leq X\leq 2/3)$.
+\item Compute the mean and the standard deviation.
+\item Compute the distribution function $F(x)$.
 \end{enumerate}
 }
 %SOLUCIÓN
 {
 \begin{enumerate}
 \item $k=1/6$.
-\item $P(X\leq 1)=0.75$, $P(X>2)=0$, $P(X=1/4)=0$ y $P(1/3\leq X\leq 2/3)=1/4$.
-\item $\mu=2/3$, $\sigma^2=2/9$ y $\sigma=\sqrt{2}/3$.
+\item $P(X\leq 1)=0.75$, $P(X>2)=0$, $P(X=1/4)=0$ and $P(1/3\leq X\leq 2/3)=1/4$.
+\item $\mu=2/3$, $\sigma^2=2/9$ and $\sigma=\sqrt{2}/3$.
 \item \[
 F(x)=
 \begin{cases}
-0 & \text{si $x<0$,}\\
-x-\frac{x^2}{4} & \text{si $0\leq x\leq 2$,}\\
-1 & \text{si $2<x$.}
+0 & \text{if $x<0$,}\\
+x-\frac{x^2}{4} & \mbox{if $0\leq x\leq 2$,}\\
+1 & \text{if $2<x$.}
 \end{cases}
 \]
 \end{enumerate}
@@ -41,7 +41,7 @@ x-\frac{x^2}{4} & \text{si $0\leq x\leq 2$,}\\
 %ENUNCIADO
 {La función de densidad de la variable aleatoria continua $X$ viene dada por la gráfica siguiente:
 \begin{center}
-\scalebox{0.6}{\input{img/variables_aleatorias_continuas/funcion_densidad_1}}
+\scalebox{0.6}{\input{img/continuous_random_variables/crv-2}}
 \end{center}
 Calcular:
 \begin{enumerate}
@@ -70,42 +70,58 @@ F(x)=
 {}
 
 
-\newproblem*{vac-3}{gen}{*}
+\newproblem{vac-3}{gen}{*}
 %ENUNCIADO
-{Dada la función de densidad dada por la siguiente gráfica,
+{Given the continuous random variable $X$ with the probability density function chart below, 
 \begin{center}
-\includegraphics[scale=0.8]{img/vac-3}
+\scalebox{0.7}{\input{img/continuous_random_variables/crv-3}}
 \end{center}
-calcular:
-
 \begin{enumerate}
-\item $P(X<1)$, $P(X>0)$, $P(X=1/4)$, $P(1/2\leq X\leq 3/2)$.
-\item Media y desviación típica.
+\item Check that $f(x)$ is a probability density function.
+\item Compute the following probabilities
+\begin{enumerate}
+\item $P(X<1)$
+\item $P(X>0)$
+\item $P(X=1/4)$
+\item $P(1/2\leq X\leq 3/2)$
+\end{enumerate}
+\item Compute the distribution function.
 \end{enumerate}
 }
 %SOLUCIÓN
-{}
+{
+\begin{enumerate}[start=2]
+\item $P(X<1)=0.5$ , $P(X>0)=1$, $P(X=1/4)=0$ and $P(1/2\leq X\leq 3/2)=0.875$.
+\item \[
+F(x)=
+\begin{cases}
+0 & \mbox{if $x<0$,}\\
+\frac{x^2}{2} & \mbox{if $0\leq x\leq 1$,}\\
+x-0.5 & \mbox{if $1<x\leq 1.5$,}\\
+1 & \mbox{if $1.5<x$.}
+\end{cases}
+\]
+\end{enumerate}
+}
 %RESOLUCIÓN
 {}
 
 
 \newproblem{vac-4}{amb}{*}
 %ENUNCIADO
-{Se sabe que la duración de las baterías de un tipo de marcapasos (expresada en años) es una variable aleatoria cuya
-función de densidad es
+{It is known that the battery lifetime of a cardiac pacemaker (in years) is a random variable with the following probability density function 
 \[
 f(x)=
 \begin{cases}
-0 & \text{si $x<0$,}\\
-\dfrac{e^{-x/10}}{10} & \text{si $x\geq 0$.}
+0 & \mbox{if $x<0$,}\\
+\dfrac{e^{-x/10}}{10} & \mbox{if $x\geq 0$.}
 \end{cases}
 \]
-Se pide:
 \begin{enumerate}
-\item Comprobar que $f(x)$ es función de densidad.
-\item Calcular la función de distribución.
-\item Calcular la probabilidad de que la batería dure menos de 5 años, y de que dure entre 5 y 10 años.
-\item Calcular la vida media de la batería.
+\item Check that $f(x)$ is a probability density function.
+\item Compute the distribution function.
+\item Compute the probability that the battery lifetime is less than 5 years, and from 5 to 10 years.
+\item Compute the expected value for the battery lifetime.
 \end{enumerate}
 }
 %SOLUCIÓN
@@ -115,12 +131,12 @@ Se pide:
 \item \[
 F(x)=
 \begin{cases}
-0 & \text{si $s<0$,}\\
-1-e^{-x/10} & \text{si $x\geq 0$.}
+0 & \mbox{if $s<0$,}\\
+1-e^{-x/10} & \mbox{if $x\geq 0$.}
 \end{cases}
 \]
-\item $P(X<5)=0.3935$ y $P(5<X<10)=0.2387$.
-\item $\mu=10$ años.
+\item $P(X<5)=0.3935$ and $P(5<X<10)=0.2387$.
+\item $\mu=10$ years.
 \end{enumerate}
 }
 %RESOLUCIÓN
@@ -147,12 +163,12 @@ vende a $0.7$ \euro/l, y si $x>0.8$ la gasolina es del tipo III que se vende a $
 
 \newproblem{vac-6}{gen}{}
 %ENUNCIADO
-{Un empleado suele acudir al trabajo en cualquier instante entre las 6 y las 7 con igual probabilidad. Se pide:
+{A worker can arrive to the workplace in any instant between 6 and 7 in the morning with the same likelihood. 
 \begin{enumerate}
-\item Calcular la función de densidad de la variable que mide el instante en que acude a trabajar y dibujarla.
-\item Calcular la función de distribución y dibujarla.
-\item Calcular la probabilidad de que llegue entre las 6 y cuarto y las 6 y media.
-\item Calcular la hora media a la que se espera que llegue.
+\item Compute and plot the probability density function of the variable that measures the arrival time.
+\item compute and plot the distribution function. 
+\item Compute the probability of arriving quarter past six and half past six.
+\item What is the expected arrival time?
 \end{enumerate}
 }
 %SOLUCIÓN
@@ -161,21 +177,21 @@ vende a $0.7$ \euro/l, y si $x>0.8$ la gasolina es del tipo III que se vende a $
 \item \[
 f(x)=
 \begin{cases}
-0 & \text{si $x<6$,}\\
-1 & \text{si $6\leq x\leq 7$,}\\
-0 & \text{si $7<x$.}
+0 & \mbox{if $x<6$,}\\
+1 & \mbox{if $6\leq x\leq 7$,}\\
+0 & \mbox{if $7<x$.}
 \end{cases}
 \]
 \item \[
 F(x)=
 \begin{cases}
-0 & \text{si $x<6$,}\\
-x-6 & \text{si $6\leq x\leq 7$,}\\
-1 & \text{si $7<x$.}
+0 & \mbox{if $x<6$,}\\
+x-6 & \mbox{if $6\leq x\leq 7$,}\\
+1 & \mbox{if $7<x$.}
 \end{cases}
 \]
 \item $P(6.25<X<6.5)=0.25$.
-\item $\mu=6.5$, es decir, a las 6 horas y media.
+\item $\mu=6.5$.
 \end{enumerate}
 }
 %RESOLUCIÓN
@@ -235,20 +251,21 @@ calcular $P(\left| X-2\right| <3)$.
 {}
 
 
-\newproblem*{vac-10}{med}{}
+\newproblem{vac-10}{med}{}
 %ENUNCIADO
-{Se sabe que el nivel de colesterol en varones de más de 30 años sigue una distribución normal, de media 220 mg/dl y desviación típica 30 mg/dl. Realizando un estudio sobre 20000 varones mayores de 30 años,
+{It is known that the cholesterol level in males 30 years old follows a normal probability distribution model with mean 220 mg/dl and standard deviation 30 mg/dl. 
+If there are 20000 males 30 years old in the population,
 \begin{enumerate}
-\item ¿Cuántos se espera que tengan su nivel de colesterol entre 210 y 240 mg/dl?
-\item Si un nivel de colesterol por encima de 250 mg/dl puede provocar trombosis, ¿cuántos tienen riesgo de trombosis?
-\item ¿Cuál será el nivel de colesterol por encima del cual está el 20\% de la población?
+\item how many of them have a cholesterol level between 210 and 240 mg/dl?
+\item If a cholesterol level greater than 250 mg/dl can provoke a thrombosis, how many of them are in risk of thrombosis?
+\item Compute the cholesterol level above which 20\% of the males are?
 \end{enumerate}
 }
 %SOLUCIÓN
 {
 \begin{enumerate}
-\item $P(210\leq X\leq 240)=0.3781\rightarrow 7561.3$  varones. 
-\item $P(X>250)=0.1587\rightarrow 3173.1$ varones. 
+\item $P(210\leq X\leq 240)=0.3781\rightarrow 7561.3$ males. 
+\item $P(X>250)=0.1587\rightarrow 3173.1$ males. 
 \item $P_{80}=245.2486$ mg/dl. 
 \end{enumerate}
 }
@@ -258,19 +275,19 @@ calcular $P(\left| X-2\right| <3)$.
 
 \newproblem{vac-11}{med}{}
 %ENUNCIADO
-{Entre los diabéticos, el nivel de glucosa en la sangre en ayunas, puede suponerse de distribución aproximadamente
-normal, con media 106 mg/100 ml y desviación típica 8 mg/100 ml.
+{It is known that the glucose level in blood of diabetic persons follows a normal probability distribution model with
+mean 106 mg/100 ml and standard deviation 8 mg/100 ml.
 \begin{enumerate}
-\item Calcular la probabilidad de que una persona diabética elegida al azar tenga un nivel de glucosa inferior a  120mg/100ml.
-\item ¿Qué porcentaje de diabéticos tendrá niveles entre 90 y 120 mg/100 ml?
-\item Calcular e interpretar el primer cuartil del nivel de glucosa. 
+\item Compute the probability that a random diabetic person has a glucose level less than 120 mg/100 ml. 
+\item What percentage of persons have a glucose level between 90 and 120 mg/100 ml?
+\item Compute and interpret the first quartile of the glucose level. 
 \end{enumerate}
 }
 %SOLUCIÓN
 {
 \begin{enumerate}
 \item $P(X\leq 120)=0.9599$.
-\item $P(90< X<120)=0.9371$, es decir, un $93.71\%$.
+\item $P(90< X<120)=0.9371$, that is, $93.71\%$.
 \item $100.64$ mg/$100$ ml. 
 \end{enumerate}
 }
@@ -290,19 +307,18 @@ normal, con media 106 mg/100 ml y desviación típica 8 mg/100 ml.
 
 \newproblem{vac-13}{med}{}
 %ENUNCIADO
-{En una población con 40000 personas, se sabe que 2276 tienen entre 0.80 y 0.84 miligramos de bilirrubina por decilitro
-de sangre, y que 11508 tienen más de 0.84.
-Suponiendo que la concentración de bilirrubina en sangre sigue una distribución normal, se pide:  
+{In a population with 40000 persons, 2276 have between 0.80 and 0.84 milligrams of bilirubin per deciliter of blood, and 11508 have more than 0.84.
+Assuming that the level of bilirubin in blood follows a normal probability distribution model, 
 \begin{enumerate}
-\item Calcular su media y su desviación típica.
-\item Calcular el número de personas con más de 1 miligramo de bilirrubina por decilitro de sangre.
+\item Compute the mean and the standard deviation.
+\item How many persons have more than 1 mg of bilirubin per dl of blood?
 \end{enumerate}
 }
 %SOLUCIÓN
 {
 \begin{enumerate}
-\item $\mu=0.7$ mg y $\sigma=0.25$ mg.
-\item $P(X>1)=0.1151$ y el número de personas con más de 1 mg de bilirrubina es $0.1151\cdot 40000=4604$.
+\item $\mu=0.7$ mg and $\sigma=0.25$ mg.
+\item $P(X>1)=0.1151 \rightarrow 4604$ persons.
 \end{enumerate}
 }
 %RESOLUCIÓN
@@ -349,12 +365,13 @@ Suponiendo que la tensión arterial máxima sigue una distribución normal, se p
 {}
 
 
-\newproblem*{vac-16}{gen}{*}
+\newproblem{vac-16}{gen}{*}
 %ENUNCIADO
-{Un grupo de 100 alumnos realiza un examen. Una vez corregido, el profesor observa que la nota media es $4.2$ y que 32 alumnos han tenido una calificación superior a $5$. Suponiendo que las notas siguen una distribución normal, ¿cuántos alumnos habrán obtenido una calificación superior a $7$?
+{In an exam done by 100 students, the average degree was $4.2$ and only 32 students passed.
+Assuming that the grade follows a normal probability distribution model, how many students got a grade greater than 7?
 }
 %SOLUCIÓN
-{$P(X>7)=0.0508\rightarrow 5.1$ alumnos.
+{$P(X>7)=0.0508\rightarrow 5.1$ students.
 }
 %RESOLUCIÓN
 {}
@@ -362,20 +379,19 @@ Suponiendo que la tensión arterial máxima sigue una distribución normal, se p
 
 \newproblem{vac-17}{med}{*}
 %ENUNCIADO
-{Se supone que la tensión arterial de los habitantes de una población de 20000 habitantes sigue una distribución
-normal, cuya media es 13 y su rango intercuartílico 4.
-Se pide:
+{It is known that the blood pressure of people in a population with 20000 persons follows a normal distribution
+model with mean 13 mm Hg and interquartile range 4 mm Hg.
 \begin{enumerate}
-\item ¿Cuántas personas tienen una tensión por encima de 16?
-\item ¿Cuánto tendrá que disminuir la tensión de una persona que tiene 16 para situarse en el 40\% de la población con
-tensión más baja?
+\item How many persons have a blood pressure above 16 mm Hg?
+\item How much has to decrease the blood pressure of a person with 16 mm Hg in order to be below the 40\% of
+people with lowest blood pressure?
 \end{enumerate}
 }
 %SOLUCIÓN
 {
 \begin{enumerate}
-\item $P(X>16)=0.1587$ y el número de personas con tensión por encima de 16 mmHg es $0.1587\cdot 20000=3174$.
-\item Debe disminuir $3.75$ mmHg.
+\item $P(X>16)=0.1587 \rightarrow 3174$ persons.
+\item It must decrease at least $3.75$ mmHg.
 \end{enumerate}
 }
 %RESOLUCIÓN
@@ -750,19 +766,21 @@ P(Y\geq 1)=1-P(Y<1)=1-P(Y=0)=1-\binom{4}{0}0.1587^0 (1-0.1587)^4=1-0.8413^4=0.49
 
 \newproblem{vac-34}{fis}{*}
 %ENUNCIADO
-{Según el teorema central del límite, se sabe que para muestras grandes ($n\geq 30$) la media muestral $\bar x$ sigue una distribución
-normal $N(\mu,\sigma/\sqrt{n})$, donde $\mu$ es la media de la población y $\sigma$ su desviación típica.
+{According to the central limit theorem, for big samples ($n\geq 30$) the sample mean $\bar x$ follows a normal
+distribution model $N(\mu,\sigma/\sqrt{n})$, where $\mu$ is the population mean and $\sigma$ the population standard
+deviation.
 
-Se sabe que en una población la elongación del triceps sural tiene una media de 60 cm y una desviación típica de 15 cm. Si se toma una
-muestra de tamaño 30, ¿cuál es la probabilidad de obtener una media muestral mayor de 62? Si se considera que una muestra es atípica si su
-media muestral está por debajo del percentil 5 de su distribución, ¿se puede considerar atípica una muestra de 60 individuos con
-$\bar x=57$?}
+It is known that in a population the sural triceps elongation has a mean $60$ cm and a standard deviation $15$ cm. 
+If you draw a sample of 30 individuals from this population, what is the probability of having a sample mean greater
+than 62 cm?
+If a sample is atypical if its mean is below the 5th percentile, is atypical a sample of 60 individuals with $\bar
+x=57$?
+}
 %SOLUCIÓN
 {
 \begin{enumerate}
-\item Llamando $\bar X$ a la variable que mide la elongación media del triceps sural en muestras de tamaño 30, $P(\bar X>62)=0.2327$.
-\item Llamando $\bar Y$ a la variable que mide la elongación media del triceps sural en muestras de tamaño 60, $P_5=56.8$ cm, luego la
-muestra no es atípica.
+\item Naming $\bar X$ to the variable that measures the sural triceps elongation in samples of size 30, $P(\bar X>62)=0.2327$.
+\item Naming $\bar Y$ to the variable that measures the sural triceps elongation in samples of size 60, $P_5=56.8$ cm, so the sample is not atypical.
 \end{enumerate}
 }
 %RESOLUCIÓN
@@ -846,8 +864,8 @@ detectar la enfermedad se realiza un test diagnóstico que da positivo cuando el
 
 \newproblem{vac-37}{gen}{*}
 %ENUNCIADO
-{Sea $Z$ una variable aleatoria continua que sigue un modelo de distribución normal estándar $N(0,1)$.
-Calcular las siguientes probabilidades utilizando la tabla de la función de distribución.
+{Let $Z$ be a random variable following a standard normal distribution model.
+Calculate the following probabilities using the table of the distribution function:
 \begin{enumerate}
 \item $P(Z<1.24)$
 \item $P(Z>-0.68)$
@@ -868,8 +886,8 @@ Calcular las siguientes probabilidades utilizando la tabla de la función de dis
 
 \newproblem{vac-38}{gen}{*}
 %ENUNCIADO
-{Sea $Z$ una variable aleatoria continua con distribución normal estándar.
-Determinar el valor de $x$ en los siguientes casos utilizando la tabla de la función de distribución.
+{Let $Z$ be a random variable following a standard normal distribution model.
+Determine the value of $x$ in the following cases using the table of the distribution function:
 \begin{enumerate}
 \item $P(Z<x)=0.6406$.
 \item $P(Z>x)=0.0606$.
@@ -894,12 +912,12 @@ Determinar el valor de $x$ en los siguientes casos utilizando la tabla de la fun
 
 \newproblem{vac-39}{gen}{*}
 %ENUNCIADO
-{Sea $X$ una variable aleatoria continua con distribución normal $N(10,2)$.
+{Let $X$ be a random variable following a normal distribution model $N(10,2)$.
 \begin{enumerate}
-\item Calcular $P(X\leq 10)$.
-\item Calcular $P(8\leq X\leq 14)$.
-\item Calcular el rango intercuartílico. 
-\item Calcular el tercer decil. 
+\item Compute $P(X\leq 10)$.
+\item Compute $P(8\leq X\leq 14)$.
+\item Compute the interquartile range. 
+\item Compute the third decile. 
 \end{enumerate}
 }
 %SOLUCIÓN
@@ -918,19 +936,22 @@ Determinar el valor de $x$ en los siguientes casos utilizando la tabla de la fun
 
 \newproblem{vac-40}{nut}{*}
 %ENUNCIADO
-{Un estudio trata de determinar el efecto de una dieta baja en grasas sobre el tiempo de vida de un tipo de ratas. 
-Las ratas se dividieron en dos grupos, uno con una dieta normal y el otro con una dieta baja en grasas. 
-Se supone que el tiempo de vida sigue un modelo de distribución normal con igual varianza pero con distintas medias. 
-Si el 20\% de las ratas con dieta normal vivieron más de 12 meses, el 5\% vivieron menos de 8 meses y el 85\% de las ratas con dieta baja en grasas vivieron más de 11 meses, 
+{A study tries to determine the effect of a low fat diet in the lifetime of rats.
+The rats where divided into two groups, one with a normal diet and another with a low fat diet.
+It is assumed that the lifetime of both groups follows normal distribution model with the same variance but different
+mean.
+If 20\% of rats with normal diet lived more than 12 months, 5\% less than 8 moth, and 85\% of rats with low fat diet
+lived more than 11 moths,
 \begin{enumerate}
-\item ¿Cuál es la media y la desviación típica del tiempo de vida de las ratas con una dieta baja en grasas?
-\item Si en el experimento había un 40\% de ratas con dieta normal y un 60\% de ratas con dieta baja en grasas, ¿cuál es la probabilidad de que una rata elegida al azar muera antes de 9 meses?
+\item what is the mean and the standard deviation of lifetime of rats following a low fat diet?
+\item If there was 40\% of rats with normal diet, and 60\% of rats with low fat diet, what is the probability that a
+random rat die before 9 months?
 \end{enumerate}
 }
 %SOLUCIÓN
-{Llamando $X$ al tiempo de vida de las ratas. 
+{Naming $X$ to the lifetime of rats. 
 \begin{enumerate}
-\item $\mu=10.6461$ meses y $s=1.6087$ meses. 
+\item $\mu=10.6461$ months and $s=1.6087$ months. 
 \item $P(X<9)=0.068$.
 \end{enumerate}
 }
@@ -940,19 +961,21 @@ Si el 20\% de las ratas con dieta normal vivieron más de 12 meses, el 5\% vivie
 
 \newproblem{vac-41}{med}{*}
 %ENUNCIADO
-{Un test diagnóstico para detectar el dopaje en atletas da un resultado positivo cuando la concentración de una determinada sustancia en sangre es mayor de 4 $\mu$g/ml.
-Si la distribución de la concentración de a sustancia en sangre en atletas dopados sigue un modelo de distribución normal con media $4.5$
-$\mu$g/ml y desviación típica $0.2$ $\mu$g/ml, y en atletas no dopados sigue un modelo de distribución normal con media $3$ $\mu$g/ml y desviación típica $0.3$ $\mu$g/ml, 
+{A diagnostic test to determine doping of athletes returns a positive outcome when the concentration of a substance
+in blood is greater than 4 $\mu$g/ml.
+If the distribution of the substance concentration in doped athletes follows a normal distribution model with mean $4.5$
+$\mu$g/ml and standard deviation $0.2$ $\mu$g/ml, and in non-doped athletes follow a normal distribution model with mean
+$3$ $\mu$g/ml and standard deviation $0.3$ $\mu$g/ml, 
 \begin{enumerate}
-\item ¿cuál es la sensibilidad y la especificidad del test?
-\item Si hay un $10\%$ de atelas dopados en una competición, ¿cuál es el valor predictivo positivo del test? 
+\item what is the sensitivity and specificity of the test?
+\item If there are a 10\% of doped athletes in a competition, what is the positive predicted value? 
 \end{enumerate}
 }
 %SOLUCIÓN
-{Llamando $D$ al suceso aleatorio consistente en estar dopado, $X$ a la concentración de la sustancia en atletas dopados e $Y$ a la concentración de la sustancia en atletas no dopados.
+{Naming $D$ to the event of being doped, $X$ to the concentration of the substance in doped athletes and $Y$ to the concentration of the substance in non-doped athletes.
 \begin{enumerate}
-\item Sensibilidad $P(+|D)=P(X>4)=0.9938$ y especificidad $P(-|\bar D)=P(Y<4)=0.9996$.
-\item VPP $P(D|+)=0.9961$.
+\item Sensitivity $P(+|D)=P(X>4)=0.9938$ and specificity $P(-|\overline D)=P(Y<4)=0.9996$.
+\item PPV $P(D|+)=0.9961$.
 \end{enumerate}
 }
 %RESOLUCIÓN
