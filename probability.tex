@@ -297,22 +297,23 @@ $P(A)=4/5$, $P(B)=1/2$ y $P(A\cap B)=1/3$.
 }
 
 
-\newproblem*{pro-14}{med}{}
+\newproblem{pro-14}{med}{}
 %STATEMENT
-{A partir de una investigación realizada, se sabe que el 10\% de las personas de 50 años sufren un tipo particular de
-artritis.
-Se ha desarrollado un procedimiento para detectar esta enfermedad, y por las pruebas realizadas se observa que si se
-aplica el procedimiento a individuos que padecen la enfermedad, da positivo en el 85\% de los casos, mientras que
-si se aplica a individuos sanos, da positivo en el 4\% de los casos.
-Se pide:
+{We know, from a research study, that 10\% of people over 50 suffer a particular type or arthritis. 
+We have developed a new method to detect the disease and after clinical trials we observe that if we apply the method to people with arthritis we get a positive result in 85\% of cases, while if we apply the method to people without arthritis, we get a positive result in 4\% of cases. 
+Answer the following questions:
 \begin{enumerate}
-\item  Calcular la probabilidad de que realizado el procedimiento a una persona, el resultado sea positivo.
-\item  Si el resultado de aplicar el procedimiento a una persona ha sido positivo, ¿Cuál es la probabilidad de que
-padezca la enfermedad?
+\item What is the probability of getting a positive result after applying the method to a random person?
+\item If the result of applying the method to one person has been positive, what is the probability of having arthritis?
 \end{enumerate}
 }
 %SOLUTION
-{}
+{Naming $A$ to the event of having arthritis, 
+\begin{enumerate}
+\item $P(+)=0.121$.
+\item $P(A|+)=0.7025$. 
+\end{enumerate}
+}
 %RESOLUTION
 {}
 
@@ -486,29 +487,25 @@ positivo, ¿Cuál es la probabilidad de que esté contaminada?
 {}
 
 
-\newproblem*{pro-24}{med}{*}
+\newproblem{pro-24}{med}{*}
 % ENUNCIADO
-{El dolor intenso sin derrame en una zona concreta de la articulación de la rodilla es síntoma de esguince en el Ligamento Lateral Externo
-de la misma (L.L.E.). Si los esguinces en dicho ligamento se clasifican como: de grado 1, cuando hay simple distensión, que se presenta en
-un 60\% de los casos; de grado 2, cuando hay ruptura parcial, que se presenta en un 30\% de los casos; y de grado 3, cuando hay ruptura
-total, que se presenta en un 10\%. Y teniendo en cuenta que el síntoma se presenta en un 80\% de los que tienen el esguince de grado 1, en
-un 90\% de los de grado 2, y en un 100\% de los de grado 3:
+{A severe pain without effusion in a particular zone of the knee joint is a symptom of sprained lateral collateral ligament (SLCL). 
+If the sprains in that ligament are classified into grade 1, when there is only distension (60\% of cases), grade 2 when there is a partial tearing (30\% of cases) and grade 3 when there is a complete tearing (10\% of cases). 
+Taking into account that the symptom appears in 80\% of cases of grade 1 sprains, 90\% of cases of grade 2 and 100% of cases of grade 3, answer the following questions:
 \begin{enumerate}
-\item Si una persona se produce un esguince de L.L.E., ¿cuál es la probabilidad total de que padezca dolor intenso sin
-derrame?
-\item Si una persona llega a una consulta con dolor intenso sin derrame en la zona adecuada de la rodilla, ¿cuál sería
-el diagnóstico?
-\item De un total de 10000 personas analizadas con dolor intenso sin derrame en la zona adecuada de la rodilla,
-¿cuántas se espera que hayan sufrido un esguince de grado 1?
-¿Y de grado 2?
-¿Y de grado3?
-\item Si mantenemos iguales el resto de probabilidades dadas como dato, ¿cuáles deben ser las probabilidades de
-esguince de grado 2 y de grado 3 para que la probabilidad de esguince de grado 2 si se padece el síntoma sea igual a la
-de grado 3 si se padece el síntoma?
+\item If a person has SLCL what is the probability that he or she present severe pain without effusion?
+\item What is the diagnosis for a person with severe pain without effusion?
+\item From a total of 10000 people with severe pain without effusion, how many are expected to have a grade 1 sprain? How many are expected to have a grade 2 sprain? And a grade 3 sprain?
 \end{enumerate}
 }
 %SOLUTION
-{}
+{Naming $S$ to the event of presenting severe pain without effusion, and $G1$, $G2$ and $G3$ to the events of having a SLCL of grade 1, 2 and 3 respectively, 
+\begin{enumerate}
+\item $P(S)=0.85$.
+\item $P(G1|S)=0.5647$, $P(G2|S)=0.3176$ and $P(G3|S)=0.1176$, so the diagnosis is a SLCL of grade 1. 
+\item $5647.0588$ will have a grade 1 sprain, $3176.4706$ will have a grade 2 sprain and $1176.4706$ will have a grade 3 sprain.
+\end{enumerate}
+}
 %RESOLUTION
 {}
 
@@ -900,23 +897,23 @@ P(E/+) = \frac{P(E)P(+/E)}{P(+)} = \frac{P(E)P(+/E)}{P(E)P(+/E)+P(\overline{E})P
 
 \newproblem{pro-41}{fis}{*}
 %STATEMENT
-{Un fisioterapeuta dispone de dos técnicas $A$ y $B$ para rehabilitar una determinada lesión. Se sabe que dicha lesión es 3 veces más
-frecuentes en personas mayores de 30 años que en personas jóvenes. También se sabe que en las personas jóvenes, la técnica $A$ es efectiva
-en el 30\% de los casos y la técnica $B$ en el 60\%, mientras que en personas mayores, la técnica $A$ es efectiva en el 50\% de los casos y
-la técnica $B$ en el 70\%. Si, independiente de la edad, aplica la técnica $A$ el mismo número de veces que la técnica $B$, se pide:
+{A physiotherapist uses two techniques $A$ and $B$ to cure an injury. 
+It is known that the injury is 3 times more frequent in people over 30 than in people under 30. 
+It is also known that in people over 30 technique $A$ works in 30\% of cases and technique $B$ in 60\%, while in people under 30 technique $A$ works in 50\% of cases and technique $B$ in 70\%. 
+If both techniques are applied with the same probability, no matter the age,
 \begin{enumerate}
-\item ¿Cual es la probabilidad de que una persona joven elegida al azar se cure? ¿y la de que se cure una persona mayor?
-\item ¿Cuál es la probabilidad de que una persona cualquiera se cure?
-\item Si una persona mayor no se ha curado, ¿cuál es la probabilidad de que fuese tratado con la técnica $A$?
+\item What is the probability that a random person under 30 is cured? And for a people over 30?
+\item What is the probability that a random person is cured?
+\item If after applying a technique to a person over 30, the person does not cure, what is the probability that the technique applied was $A$?
 \end{enumerate}
 } 
 %SOLUTION
-{Llamemos $J$ al suceso consitente en que una persona con la lesión sea joven, $C$ al suceso consistente en curarse, y $A$ y $B$ a los sucesos consistentes en aplicar las respectivas técnicas de
+{Naming $J$ to the event of being under 30, $C$ to the event of being cured, and $A$ and $B$ to the events of applying techniques $A$ and $B$ respectively, 
 rehabilitación:
 \begin{enumerate}
-\item $P(C/J)=0.45.$ y $P(C/\overline{J})=0.6$.
+\item $P(C|J)=0.45.$ and $P(C|\overline{J})=0.6$.
 \item $P(C)=0.5625$.
-\item $P(A/\overline{J}\cap \overline{C})=0.625$.
+\item $P(A|\overline{J}\cap \overline{C})=0.625$.
 \end{enumerate}
 }
 %RESOLUTION
