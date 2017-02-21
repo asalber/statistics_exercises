@@ -1,0 +1,12 @@
+PWD /media/alf/datos/drive/CEU/DOCENCIA/ejercicios/statistics_exercises
+INPUT /usr/local/texlive/2016/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT continuous_random_variables.tex
+OUTPUT continuous_random_variables.log
+INPUT img/continuous_random_variables/crv-2.tex
+INPUT img/continuous_random_variables/crv-2.tex
+INPUT img/continuous_random_variables/crv-3.tex
+INPUT img/continuous_random_variables/crv-3.tex
+OUTPUT continuous_random_variables.pdf
+INPUT /usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
