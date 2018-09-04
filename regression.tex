@@ -69,7 +69,10 @@ Activity (\%) & 96 & 84 & 70 & 58 & 52 \\ \hline
 
 \begin{enumerate}
 \item  Construct the linear regression model of activity on time.
-\item  According to the linear model, when will the activity be 80\%? When will the drug have lost all activity?
+\item  According to the linear model, when will the activity be 80\%?
+When will the drug have lost all activity?
+Which prediction is more reliable?
+Justify the answer.
 \end{enumerate}
 }
 %SOLUTION
@@ -415,25 +418,24 @@ menor dispersión relativa.
 
 \newproblem{reg-14}{gen}{*}
 %STATEMENT
-{Se han medido dos variables $S$ y $T$ en 10 individuos, obteniéndose los siguientes resultados:
+{The values of two variables $S$ and $T$ measured in 10 individuals are
 \begin{center}
-(-1.5 , 2.25), (0.8 , 0.64), (-0.2 , 0.04), (-0.8 , 0.64), (0.4 , 0.16),\\
-(0.2 , 0.04), (-2.1 , 4.41), (-0.4 , 0.16), (1.5 , 2.25), (2.1 ,
-4.41).
+(-1.5, 2.25), (0.8, 0.64), (-0.2, 0.04), (-0.8, 0.64), (0.4, 0.16),\\
+(0.2, 0.04), (-2.1, 4.41), (-0.4, 0.16), (1.5, 2.25), (2.1, 4.41).
 \end{center}
-Se pide:
+
 \begin{enumerate}
-\item Calcular la covarianza de $S$ y $T$.
-\item ¿Se puede afirmar que $S$ y $T$ son independientes?
-Justificar la respuesta.
-\item ¿Qué valor predice la correspondiente recta de regresión para $t=2$?
+\item Compute the covariance of $S$ and $T$.
+\item Can we affirm that $S$ and $T$ are independent?
+Justify the answer.
+\item Use the regression line to predict the value of $S$ for $t=2$.
 \end{enumerate}
 }
 %SOLUTION
 {
 \begin{enumerate}
-\item $\bar s=0$, $\bar t=1.5$ y $s_{st}=0$.
-\item No podemos afirmar que $S$ y $T$ son independientes, sólo se puede afirmar que no hay relación lineal.
+\item $\bar s=0$, $\bar t=1.5$ and $s_{st}=0$.
+\item We can affirm that there is no linear relationship between $S$ and $T$, but we can not affirm thar are independent.
 \item $s(2)=0$.
 \end{enumerate}
 }
@@ -527,35 +529,36 @@ Es fiable esta predicción.
 
 \newproblem{reg-18}{med}{*}
 %STATEMENT
-{La tabla siguiente contiene los datos de las presiones sistólicas de 15 individuos en función de la edad de estos.
+{The table below contains the age in years and the systolic pressure in mmHg of 15 individuals.
 \[
 \begin{array}{|c|c|c|c|c|c|}
 \hline
-\text{Edad} (x) & 20 & 30 & 40 & 50 & 60 \\
+\text{Age} (x) & 20 & 30 & 40 & 50 & 60 \\
 \hline
 & 121 & 131 & 132 & 136 & 134\\
-\text{Sistólica} (y) & 130 & 125 & 129 & 128 & 142 \\
+\text{Systolic pressure} (y) & 130 & 125 & 129 & 128 & 142 \\
 & 125 & 128 & 131 & 134 & 137\\
 \hline
 \end{array}
 \]
 
 \begin{enumerate}
-\item ¿Qué porcentaje de la varianza de la presión sistólica se explica, mediante un modelo de regresión lineal, por la
-varianza de la edad?
-\item ¿Qué edad le correspondería a un individuo que presenta una presión sistólica de 133?
-¿Es fiable esta predicción?
-Razona la respuesta.
+\item What percentage of the systolic pressure variance is explained by the age according to the linear regression model?
+\item According to that regression model, what age corresponds to an individual with a systolic pressure of 133 mmHg.
+Is reliable this prediction? 
+Justify the answer. 
 \end{enumerate}
+Use the following sums for the computations:
+$\sum x_i=600$ years, $\sum y_j=1963$ mmHg, $\sum x_i^2=27000$ years$^2$, $\sum y_j^2=257287$ mmHg$^2$ and $\sum x_iy_j=79400$ years$\cdot$mmHg.
 }
 %SOLUTION
 {
 \begin{enumerate}
-\item $\bar x=40$ años, $\bar y=130.867$ mmHg, $s_x^2=200$ años$^2$, $s_y^2=26.295$ mmHg$^2$ y $s_{xy}=58.667$
-años$\cdot$mmHg.\\
-$r^2=0.654$, luego el modelo lineal explica el $65.4\%$ de la varianza de la presión sistólica.
-\item Recta de regresión de la edad sobre la presión sistólica: $x=2.231y-251.978$.\\
-$x(133)=44.745$ años. La predicción es bastante fiable pues el coeficiente de determinación es alto.
+\item $\bar x=40$ years, $\bar y=130.867$ mmHg, $s_x^2=200$ years$^2$, $s_y^2=26.295$ mmHg$^2$ y $s_{xy}=58.667$
+years$\cdot$mmHg.\\
+$r^2=0.654$, thus $65.4\%$ of the systolic pressure variance is explained by the age according to the linear regression model.
+\item Regression line of age on systolic pressure: $x=2.231y-251.978$.\\
+$x(133)=44.745$ years. This prediction is moderately reliable since the determination coefficient is moderately high. 
 \end{enumerate}
 }
 %RESOLUTION

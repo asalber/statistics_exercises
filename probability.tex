@@ -1025,34 +1025,34 @@ una población es de un 2\%, la sensibilidad de $A$ es de un 95\%, la sensibilid
 }
 %RESOLUTION
 {El espacio muestral del experimento correspondiente a la aplicación del test diagnóstico aparece en el siguiente árbol
-\begin{center}
-\psset{treesep=0.6cm, levelsep=2.5cm, tpos=0.6}
-\renewcommand{\psedge}[2]{\ncdiag[armA=0.8cm,angleA=180,angleB=0,armB=0cm]{#2}{#1}} 
-\pstree[treemode=R, nodesep=1pt]{\Tp*}{
-	\pstree[linestyle=none]{\TR[edge=none]{Enfermedad}}{
-		\pstree{\TR{Test}}{
-			\pstree{\TR{$E$}}{\TR{$P$}}
-		}
-	}
-	\pstree{\TR{$E$}\taput{\scriptsize $P(E)$}}{
-		\pstree[linestyle=none]{\TR{$+$}\taput{\scriptsize $P(+/E)$}}{
-			\pstree{\TR{$(E,+)$}}{\TR{?}}
-		}
-		\pstree[linestyle=none]{\TR{$-$}\taput{\scriptsize $P(-/E)$}}{
-			\pstree{\TR{$(E,-)$}}{\TR{$0.01$}}
-		}
-	}
-	\pstree{\TR{$\overline E$}\taput{\scriptsize $P(\overline E)$}}{
-		\pstree[linestyle=none]{\TR{$+$}\taput{\scriptsize $P(+/\overline E)$}}{
-			\pstree{\TR{$(\overline E,+)$}}{\TR{$0.02$}}
-		}
-		\pstree[linestyle=none]{\TR{$-$}\taput{\scriptsize $P(-/\overline E)$}}{
-			\pstree{\TR{$(\overline E,-)$}}{\TR{$0.9$}}
-		}
-	}
-	\pstree[linestyle=none]{\Tp[edge=none]}{\Tp}
-}
-\end{center}
+% \begin{center}
+% \psset{treesep=0.6cm, levelsep=2.5cm, tpos=0.6}
+% \renewcommand{\psedge}[2]{\ncdiag[armA=0.8cm,angleA=180,angleB=0,armB=0cm]{#2}{#1}} 
+% \pstree[treemode=R, nodesep=1pt]{\Tp*}{
+% 	\pstree[linestyle=none]{\TR[edge=none]{Enfermedad}}{
+% 		\pstree{\TR{Test}}{
+% 			\pstree{\TR{$E$}}{\TR{$P$}}
+% 		}
+% 	}
+% 	\pstree{\TR{$E$}\taput{\scriptsize $P(E)$}}{
+% 		\pstree[linestyle=none]{\TR{$+$}\taput{\scriptsize $P(+/E)$}}{
+% 			\pstree{\TR{$(E,+)$}}{\TR{?}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$-$}\taput{\scriptsize $P(-/E)$}}{
+% 			\pstree{\TR{$(E,-)$}}{\TR{$0.01$}}
+% 		}
+% 	}
+% 	\pstree{\TR{$\overline E$}\taput{\scriptsize $P(\overline E)$}}{
+% 		\pstree[linestyle=none]{\TR{$+$}\taput{\scriptsize $P(+/\overline E)$}}{
+% 			\pstree{\TR{$(\overline E,+)$}}{\TR{$0.02$}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$-$}\taput{\scriptsize $P(-/\overline E)$}}{
+% 			\pstree{\TR{$(\overline E,-)$}}{\TR{$0.9$}}
+% 		}
+% 	}
+% 	\pstree[linestyle=none]{\Tp[edge=none]}{\Tp}
+% }
+% \end{center}
 
 Como la probabilidad el espacio muestral es 1, se puede deducir que la probabilidad que falta $P(E,+))= 1- 0.01 -0.02 -0.9 = 0.07$.
 
@@ -1114,56 +1114,56 @@ A)=0.33$ y $10000\cdot 0.33=3300$ personas que han estado en la categoría $A$ a
 %RESOLUTION
 {Llamando $a$, $b$, $c$ y $d$ a los sucesos consistentes en pertenecer a las categorías $A$, $B$, $C$, y $D$ respectivamente antes de la
 intervención, y $A$, $B$, $C$, y $D$ a los sucesos consistentes en pertenecer a esas categorías después, el árbol correspondiente al experimento es el siguiente
-\begin{center}
-\psset{treesep=0.6cm, levelsep=2.5cm, tpos=0.6}
-\renewcommand{\psedge}[2]{\ncdiag[armA=0.9cm,angleA=180,angleB=0,armB=0cm]{#2}{#1}} 
-\pstree[treemode=R, nodesep=1pt]{\Tp*}{
-	\pstree[linestyle=none]{\TR[edge=none]{Antes}}{
-		\pstree{\TR{Después}}{
-			\pstree{\TR{$E$}}{\TR{$P$}}
-		}
-	}
-	\pstree{\TR{$a$}\taput{\scriptsize $0.1$}}{
-		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $1$}}{
-			\pstree{\TR{$(a,A)$}}{\TR{$0.1\cdot 1$}}
-		}
-	}
-	\pstree{\TR{$b$}\taput{\scriptsize $0.2$}}{
-		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $0.5$}}{
-			\pstree{\TR{$(b,A)$}}{\TR{$0.2\cdot 0.5$}}
-		}
-		\pstree[linestyle=none]{\TR{$B$}\taput{\scriptsize $0.5$}}{
-			\pstree{\TR{$(b,B)$}}{\TR{$0.2\cdot 0.5$}}
-		}
-	}
-	\pstree{\TR{$c$}\taput{\scriptsize $0.3$}}{
-		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $0.3$}}{
-			\pstree{\TR{$(c,A)$}}{\TR{$0.3\cdot 0.3$}}
-		}
-		\pstree[linestyle=none]{\TR{$B$}\taput{\scriptsize $0.4$}}{
-			\pstree{\TR{$(c,B)$}}{\TR{$0.3\cdot 0.4$}}
-		}
-		\pstree[linestyle=none]{\TR{$C$}\taput{\scriptsize $0.3$}}{
-			\pstree{\TR{$(c,C)$}}{\TR{$0.3\cdot 0.3$}}
-		}
-	}
-	\pstree{\TR{$d$}\taput{\scriptsize $0.4$}}{
-		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $0.1$}}{
-			\pstree{\TR{$(d,A)$}}{\TR{$0.4\cdot 0.1$}}
-		}
-		\pstree[linestyle=none]{\TR{$B$}\taput{\scriptsize $0.3$}}{
-			\pstree{\TR{$(d,B)$}}{\TR{$0.4\cdot 0.3$}}
-		}
-		\pstree[linestyle=none]{\TR{$C$}\taput{\scriptsize $0.4$}}{
-			\pstree{\TR{$(d,C)$}}{\TR{$0.4\cdot 0.4$}}
-		}
-		\pstree[linestyle=none]{\TR{$D$}\taput{\scriptsize $0.2$}}{
-			\pstree{\TR{$(d,D)$}}{\TR{$0.4\cdot 0.2$}}
-		}
-	}
-%	\pstree[linestyle=none]{\Tp[edge=none]}{\Tp}
-}
-\end{center}
+% \begin{center}
+% \psset{treesep=0.6cm, levelsep=2.5cm, tpos=0.6}
+% \renewcommand{\psedge}[2]{\ncdiag[armA=0.9cm,angleA=180,angleB=0,armB=0cm]{#2}{#1}} 
+% \pstree[treemode=R, nodesep=1pt]{\Tp*}{
+% 	\pstree[linestyle=none]{\TR[edge=none]{Antes}}{
+% 		\pstree{\TR{Después}}{
+% 			\pstree{\TR{$E$}}{\TR{$P$}}
+% 		}
+% 	}
+% 	\pstree{\TR{$a$}\taput{\scriptsize $0.1$}}{
+% 		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $1$}}{
+% 			\pstree{\TR{$(a,A)$}}{\TR{$0.1\cdot 1$}}
+% 		}
+% 	}
+% 	\pstree{\TR{$b$}\taput{\scriptsize $0.2$}}{
+% 		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $0.5$}}{
+% 			\pstree{\TR{$(b,A)$}}{\TR{$0.2\cdot 0.5$}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$B$}\taput{\scriptsize $0.5$}}{
+% 			\pstree{\TR{$(b,B)$}}{\TR{$0.2\cdot 0.5$}}
+% 		}
+% 	}
+% 	\pstree{\TR{$c$}\taput{\scriptsize $0.3$}}{
+% 		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $0.3$}}{
+% 			\pstree{\TR{$(c,A)$}}{\TR{$0.3\cdot 0.3$}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$B$}\taput{\scriptsize $0.4$}}{
+% 			\pstree{\TR{$(c,B)$}}{\TR{$0.3\cdot 0.4$}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$C$}\taput{\scriptsize $0.3$}}{
+% 			\pstree{\TR{$(c,C)$}}{\TR{$0.3\cdot 0.3$}}
+% 		}
+% 	}
+% 	\pstree{\TR{$d$}\taput{\scriptsize $0.4$}}{
+% 		\pstree[linestyle=none]{\TR{$A$}\taput{\scriptsize $0.1$}}{
+% 			\pstree{\TR{$(d,A)$}}{\TR{$0.4\cdot 0.1$}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$B$}\taput{\scriptsize $0.3$}}{
+% 			\pstree{\TR{$(d,B)$}}{\TR{$0.4\cdot 0.3$}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$C$}\taput{\scriptsize $0.4$}}{
+% 			\pstree{\TR{$(d,C)$}}{\TR{$0.4\cdot 0.4$}}
+% 		}
+% 		\pstree[linestyle=none]{\TR{$D$}\taput{\scriptsize $0.2$}}{
+% 			\pstree{\TR{$(d,D)$}}{\TR{$0.4\cdot 0.2$}}
+% 		}
+% 	}
+% %	\pstree[linestyle=none]{\Tp[edge=none]}{\Tp}
+% }
+% \end{center}
 
 
 \begin{enumerate}
