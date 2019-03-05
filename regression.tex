@@ -744,7 +744,7 @@ Use the following sums ($X$=Time and $Y$=Temperature): $\sum x_i=225$ min, $\sum
 \begin{enumerate}
 \item A logarithmic model.
 \item Apply a logarithmic transformation to time, $z=\log(x)$.
-\item $\bar z=28.125$ $\log(\mbox{min})$, $s_z^2=0.6577$ $\log^2(\mbox{min})$, $\bar y=90.625$ ºF, $s_y^2=1080.2344$ ºF$^2$ and $s_{zy}=26.0969$ $\log(\mbox{min})$ºF.\\
+\item $\bar z=3.0661$ $\log(\mbox{min})$, $s_z^2=0.6577$ $\log^2(\mbox{min})$, $\bar y=90.625$ ºF, $s_y^2=1080.2344$ ºF$^2$ and $s_{zy}=26.0969$ $\log(\mbox{min})$ºF.\\
 Logarithmic model of temperature on time: $y=-31.0325+39.6781\log(x)$.
 \item $y(15)=76.4176$ ºF. $r^2=0.9586$, that is close to 1, so the prediction is reliable.
 \end{enumerate}
@@ -1651,22 +1651,20 @@ Is this prection reliable?
 \item According to the best regression model, what is the expected obesity for a person with a pain threshold of
 10? Is this prediction reliable?
 \end{enumerate}
-Use the following sums ($X$=Obesity and $Y$=Pain threshold): $\sum x_i=629$, $\sum \log(x_i)=40.4121$, $\sum y_j=92.2$,
-$\sum \log(y_j)=21.339$, $\sum x_i^2=45445$, $\sum \log(x_i)^2=165.6795$, $\sum y_j^2=960.14$, $\sum
-\log(y_j)^2=47.6231$, $\sum x_iy_j=6537.7$, $\sum x_i\log(y_j)=1443.1275$, $\sum \log(x_i)y_j=387.5728$, $\sum
-\log(x_i)\log(y_j)=88.3696$.
+Use the following sums ($X$=Obesity and $Y$=Pain threshold): $\sum x_i=629$, $\sum \log(x_i)=40.4121$, $\sum y_j=85.5$,
+$\sum \log(y_j)=20.4679$, $\sum x_i^2=45445$, $\sum \log(x_i)^2=165.6795$, $\sum y_j^2=854.75$, $\sum\log(y_j)^2=44.08906$, $\sum x_iy_j=6124$, $\sum x_i\log(y_j)=1390.14$, $\sum \log(x_i)y_j=360.0725$, $\sum\log(x_i)\log(y_j)=84.80687$.
 }
 %SOLUTION
 {
 \begin{enumerate}[start=2]
-\item $\bar{x}=62.9$, $s_x^2=588.09$, $\bar{y}=9.22$, $s_y^2=11.0056$ and $s_{xy}=82.0356$.\\
-Regression line of response to pain on obesity: $y=1.3232+0.1255x$. $r^2=0.8422$.\\
-$\overline{\log(x)}=4.0412$, $s_{\log(x)}^2=0.2366$ and $s_{\log(x)y}=1.4973$.
-Logarithmic model of response to pain on obesity: $y=-16.3578+6.3293\log(x)$.
-$r^2=0.8611$.\\
-$y(50)=8.4023$.
-\item Exponential model of obesity on response to pain: $x=e^{2.7868+0.1361y}$.\\
-$x(10)=63.2648$.
+\item $\bar{x}=62.9$, $s_x^2=588.09$, $\bar{y}=8.55$, $s_y^2=12.3725$ and $s_{xy}=74.605$.\\
+Regression line of response to pain on obesity: $y=0.5705+0.1269x$. $r^2=0.765$.\\
+$\overline{\log(x)}=4.0412$, $s_{\log(x)}^2=0.2366$ and $s_{\log(x)y}=1.45491$.
+Logarithmic model of response to pain on obesity: $y=-16.303+6.150\log(x)$.
+$r^2=0.7232$.\\
+Using the linear model: $y(50)=6.9155$.
+\item Regression line of obesity on response to pain: $x=11.344+6.030y$.\\
+$x(10)=71.644$.
 \end{enumerate}
 }
 %RESOLUTION
