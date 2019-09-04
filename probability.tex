@@ -1397,3 +1397,135 @@ What can you say about the effectiveness of the program of preparation exercises
 }
 %RESOLUTION
 {}
+
+\newproblem{pro-54}{bio}{}
+%STATEMENT
+{In a city many cases of intoxicated people have been detected in the last week and it is suspected that the cause may be the consumption of a certain brand of bottled water.
+To confirm the association between the consumption of this water and the intoxication, a sample of 750 intoxicated persons and 1250 non intoxicated persons was randomly draw.
+In the intoxicated sample it was observed that 420 had consumed that brand of water, while in the sample of non intoxicated 80 had consumed the brand of water.
+
+\begin{enumerate}
+\item Compute the incidence of intoxication in people that consumed the brand of water and in people who not. 
+\item With these data, is it possible to compute the prevalence of intoxication in the popupalation?
+\item Compute the relative risk of intoxication consumming the brand of water and interpret it.
+\item Compute the odds ratio of intoxication consumming the brand of water and interpret it.
+\item Which assosiation measure is more appropiate for this study? Justify the answer.
+\end{enumerate}
+}
+%SOLUTION
+{
+\begin{enumerate}
+\item $R_T(E)=0.84$ and $R_C(E)=0.22$.
+\item No, because is a retrospective study.
+\item $RR(E)=3.8182$.
+\item $OR(E)=18.6136$.
+\item The odds ratio, because we can not estimate the prevalence of intoxication.
+\end{enumerate}
+}
+%RESOLUTION
+{
+}
+
+\newproblem{pro-55}{gen}{}
+%STATEMENT
+{
+The tree below represents the probability space of a random experiment that consists in drawing a random person from a population and cheching if he or she suffered or not three diseases $A$, $B$ and $C$.
+
+\begin{center}
+\begin{tikzpicture}[
+grow=right,
+sloped,
+level 1/.style ={level distance=2cm, sibling distance=3.2cm, parent anchor=east, child anchor=west},
+level 2/.style ={level distance=2cm, sibling distance=1.6cm},
+level 3/.style ={level distance=2cm, sibling distance=1cm},
+prob/.style={font=\footnotesize,above}
+]
+
+\node (root) {}
+child {node {$\overline A$}
+child {node {$\overline B$}
+child {node {$\overline C$}
+}
+child {node {$C$}}
+}
+child {node {$B$}
+child {node {$\overline C$}}
+child {node {$C$}  edge from parent node[prob] {$0.1$}}
+}
+}
+child {node {$A$}
+child {node {$\overline B$}
+child {node {$\overline C$}}
+child {node {$C$} edge from parent node[prob] {$0.15$}}
+}
+child {node {$B$}
+child {node {$\overline C$}  edge from parent node[prob] {$0.7$}}
+child {node {$C$}}
+edge from parent node[prob] {$0.2$}
+}
+};
+\end{tikzpicture}
+\end{center}
+
+Knowing that $1.5$\% of the population suffered the three diseases, that 54\% suffered none of them and that diseases $A$ and $B$ are independent:
+
+\begin{enumerate}
+\item Complete the tree labelling the branches with their probabilities.
+\item Compute the probability of suffering disease $C$.
+\item Compute the probability of suffering disease $B$ if it has been suffered disease $C$.
+\item Compute the probability of not suffering disease $A$ it the other two have not been suffered.
+\item Are the diseases $B$ and $C$ independent?
+\end{enumerate}
+}
+%SOLUTION
+{
+\begin{enumerate}
+\item \hfill\break
+
+\begin{tikzpicture}[
+grow=right,
+sloped,
+level 1/.style ={level distance=2cm, sibling distance=3.2cm, parent anchor=east, child anchor=west},
+level 2/.style ={level distance=2cm, sibling distance=1.6cm},
+level 3/.style ={level distance=2cm, sibling distance=1cm},
+prob/.style={font=\footnotesize,above}
+]
+
+\node (root) {}
+child {node {$\overline A$}
+child {node {$\overline B$}
+child {node {$\overline C$} edge from parent node[prob] {$0.9$}}
+child {node {$C$} edge from parent node[prob] {$0.1$}}
+edge from parent node[prob] {$0.8$}
+}
+child {node {$B$}
+child {node {$\overline C$} edge from parent node[prob] {$0.9$}}
+child {node {$C$}  edge from parent node[prob] {$0.1$}}
+edge from parent node[prob] {$0.2$}
+}
+edge from parent node[prob] {$0.25$}
+}
+child {node {$A$}
+child {node {$\overline B$}
+child {node {$\overline C$} edge from parent node[prob] {$0.85$}}
+child {node {$C$} edge from parent node[prob] {$0.15$}}
+edge from parent node[prob] {$0.8$}
+}
+child {node {$B$}
+child {node {$\overline C$} edge from parent node[prob] {$0.7$}}
+child {node {$C$ } edge from parent node[prob] {$0.3$}}
+edge from parent node[prob] {$0.2$}
+}
+edge from parent node[prob] {$0.75$}
+};
+\end{tikzpicture}
+
+\item $P(C)=0.12$.
+\item $P(B|C)=0.25$.
+\item $P(\overline A | \overline B \cap \overline C)=0.7606$.
+\item No, because $P(B|C)\neq P(B)$.
+\end{enumerate}
+}
+%RESOLUTION
+{
+}
