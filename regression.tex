@@ -1832,11 +1832,11 @@ To check the effectiveness of this genetic modification two samples of rats were
 The following sums summarize the results:
 
 \textbf{Palm oil quantity in gr} (the same in both samples)\\
-\(\sum x_i=640.6467\), \(\sum x_i^2=23508.6387\),\\
+$\sum x_i=640.6467$, $\sum x_i^2=23508.6387$,\\
 \textbf{Cholesterol level in blood in mg/dl of non genetically modified rats}\\
-\(\sum y_j=2945.8545\), \(\sum y_j^2=439517.5975\), \(\sum x_iy_j=98156.0658\).\\
+$\sum y_j=2945.8545$, $\sum y_j^2=439517.5975$, $\sum x_iy_j=98156.0658$.\\
 \textbf{Cholesterol level in blood in mg/dl of genetically modified rats}\\
-\(\sum y_j=2126.5899\), \(\sum y_j^2=226824.5373\), \(\sum x_iy_j=69517.3648\).
+$\sum y_j=2126.5899$, $\sum y_j^2=226824.5373$, $\sum x_iy_j=69517.3648$.
 
 \begin{enumerate}
 \item In which sample the regression line of cholesterol on the palm oil quantity fits better?
@@ -1855,6 +1855,60 @@ Thus, the regression line fits better in genetically modified rats since the coe
 \item Regression line of $Y$ on $X$ in non genetically modified rats: $y=106.615+1.2699x$. Prediction: $y(25)=138.3624$\\
 Regression line of $Y$ on $X$ in genetically modified rats: $y=91.3416+0.4679x$. Prediction: $y(25)=103.0391$.
 \item Regression line of $X$ on $Y$ in non genetically modified rats: $x=-67.4838+0.6756y$. Prediction: $x(150)=33.8615$. The prediction is very reliable since the coef. of determination is close to 1.
+\end{enumerate}
+}
+%RESOLUTION
+{
+}
+
+\newproblem{reg-47}{med}{*}
+%STATEMENT
+{A study tries to determine the effect of smoking during the pregnancy in the weight of newborns. The table below shows the daily number of cigarretes smoked by mothers ($X$) and the weight of the newborn
+(all of them are males) ($Y$).
+
+\[
+\begin{array}{lrrrrrrrrrrrr}
+   \hline
+\mbox{Daily num cigarettes} & 10.00 & 14.00 & 8.00 & 11.00 & 7.00 & 6.00 & 2.00 & 5.00 & 9.00 & 9.00 & 4.00 & 6.00 \\ 
+  \mbox{Weight (kg)} & 2.55 & 2.44 & 2.68 & 2.65 & 2.71 & 2.85 & 3.45 & 2.93 & 2.67 & 2.59 & 3.02 & 2.72 \\ 
+   \hline
+\end{array}
+\]
+
+\begin{enumerate}
+\item Give the equation of the regression line of the weight of newborns on the daily number of cigarettes and interpret the slope.
+\item Which regression model is better to predict the weight of newborns, the logarithmic or the exponential?
+\item Use the best of the two previous regression models to predict the weight of a newborn whose mother smokes 12 cigarettes a day. Is this prediction reliable?
+\end{enumerate}
+
+Use the following sums for the computations:\\
+$\sum x_i=91$ cigarettes, $\sum \log(x_i)=23.0317$
+$\log(\mbox{cigarettes})$, $\sum y_j=33.26$ kg,
+$\sum \log(y_j)=12.1857$ $\log(\mbox{kg})$,\\
+$\sum x_i^2=809$ cigarettes$^2$, $\sum \log(x_i)^2=47.196$
+$\log(\mbox{cigarettes})^2$, $\sum y_j^2=92.9708$ kg$^2$,
+$\sum \log(y_j)^2=12.4665$ $\log(\mbox{kg})^2$,\\
+$\sum x_iy_j=243.61$ cigarettes$\cdot$kg,
+$\sum x_i\log(y_j)=89.3984$ cigarettes$\cdot\log(\mbox{kg})$,
+$\sum \log(x_i)y_j=62.3428$ $\log(\mbox{cigarettes})$kg,
+$\sum \log(x_i)\log(y_j)=22.8753$
+$\log(\mbox{cigarettes})\log(\mbox{kg})$.
+}
+%SOLUTION
+{ 
+\begin{enumerate}
+   \item $\bar x=7.5833$ cigarettes, $s_x^2=9.9097$ cigarettes$^2$.\\ 
+   $\bar y=2.7717$ kg, $s_y^2=0.0654$ kg$^2$.\\
+     $s_{xy}=-0.7176.$ cigarettes$\cdot$kg\\
+     Regression line: $y=-0.0724x + 3.3208$.
+   \item $\overline{\log(x)}=1.9193$ log(cigarettes), $s_{\log(x)}^2=0.2492$ log(cigarettes)$^2$.\\
+     $\overline{\log(y)}=1.0155$ log(kg), $s_{\log(y)}^2=0.0077$ log(kg)$^2$.\\
+     $s_{x\log(y)}=-0.2508$ cigarettes$\cdot$log(kg), $s_{\log(x)y}=-0.1245$ log(cigarettes)$\cdot$kg\\
+     Logarithmic coef. determination: $r^2=0.9499$\\
+     Exponential coef. determination: $r^2=0.8268$\\
+     Therefore, the logarithmic models fits better the data and is better to predict the weight.
+   \item Logarithmic regression model: $y=3.7301+-0.4994\log(x)$.\\
+     Prediction: $y(12)=2.4892$ kg. The coefficient of determination is high but the sample size small, so the prediction is not enterely reliable.
 \end{enumerate}
 }
 %RESOLUTION

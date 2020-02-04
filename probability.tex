@@ -1415,10 +1415,10 @@ In the intoxicated sample it was observed that 420 had consumed that brand of wa
 %SOLUTION
 {
 \begin{enumerate}
-\item $R_T(E)=0.84$ and $R_C(E)=0.22$.
+\item $R_T(I)=0.84$ and $R_C(I)=0.22$.
 \item No, because is a retrospective study.
-\item $RR(E)=3.8182$.
-\item $OR(E)=18.6136$.
+\item $RR(I)=3.8182$.
+\item $OR(I)=18.6136$.
 \item The odds ratio, because we can not estimate the prevalence of intoxication.
 \end{enumerate}
 }
@@ -1524,6 +1524,33 @@ edge from parent node[prob] {$0.75$}
 \item $P(B|C)=0.25$.
 \item $P(\overline A | \overline B \cap \overline C)=0.7606$.
 \item No, because $P(B|C)\neq P(B)$.
+\end{enumerate}
+}
+%RESOLUTION
+{
+}
+
+\newproblem{pro-56}{fis}{*}
+%STATEMENT
+{A study tries to determine the effectiveness of an occupational risk prevention program in jobs that require to be sit a lot of hours.
+A sample of 500 individuals between 40 and 50 years that spent more than 5 hours sitting was drawn. Half of the individuals followed the prevention program (treatment group) and the other half not (control group). After 5 years it was observed that 12 individuals suffered spinal injuries in the group following the prevention program while 32 individuals suffered spinal injuries in the other group. In the following 5 years it was observed that 21 individuals suffered spinal injuries in the group following the prevention program while 48 individuals suffered spinal injuries in the other group. 
+
+\begin{enumerate}
+\item Compute the cumulative incidence of spinal injuries in the total sample after 5 years and after 10 years.
+\item Compute the absolute risk of suffering spinal injuries in 10 years in the treatment and control groups.
+\item Compute the relative risk of suffering spinal injuries in 10 years in the treatment group compared to the control group. Interpret it.
+\item Compute the odds ratio of suffering spinal injuries in 10 years in the treatment group compared to the control group. Interpret it.
+\item Which statistics, the relative risk or the odds ratio, is more suitable in this study? Justify the answer.
+\end{enumerate}
+}
+%SOLUTION
+{
+\begin{enumerate}
+\item Cumulative incidence after 5 years: $R(D)=0.088$. Cumulative incidence after 10 years: $R(D)=0.226$.
+\item Risk in the treatment group: $R_T(D)=0.132$. Risk in the control group: $R_C(D)=0.32$.
+\item $RR(D)=0.4125$. Thus, the risk of suffering spinal injuries is less than half following the prevention program. 
+\item $OR(D)=0.3232$. Thus, the odd of suffering spinal injuries is less than one third following the prevention program.
+\item Since the study is prospective and we can estimate the prevalence of $D$, both statistics are suitable, but relative risk is easier to interpret.
 \end{enumerate}
 }
 %RESOLUTION
