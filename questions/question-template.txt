@@ -1,0 +1,19 @@
+---
+id: "$id"
+author: "Alfredo Sánchez Alberca (asalber@ceu.es)"
+degree = "$degree"
+subject = "Statistics"
+topic = "$topic"
+star = $star
+difficulty = "$difficulty"
+date = "$date"
+---
+
+# STATEMENT
+$statement
+
+# SOLUTION
+$solution
+
+# RESOLUTION
+$resolution
