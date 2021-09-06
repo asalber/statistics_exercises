@@ -1,8 +1,8 @@
-PWD /run/media/alf/datos/CEU/DOCENCIA/ejercicios/statistics_exercises
+PWD /run/media/alf/datos/misrepositorios/docencia/statistics_exercises
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /run/media/alf/datos/CEU/DOCENCIA/ejercicios/statistics_exercises/statistics_problems_pharmacy_2021-2022.tex
+INPUT /run/media/alf/datos/misrepositorios/docencia/statistics_exercises/statistics_problems_pharmacy_2021-2022.tex
 OUTPUT statistics_problems_pharmacy_2021-2022.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
