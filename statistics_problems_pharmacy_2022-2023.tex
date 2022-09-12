@@ -1,0 +1,253 @@
+% Author Alfredo Sánchez Alberca (asalber@ceu.es)
+%!TEX program = pdflatex
+\documentclass[a4paper,titlepage]{article}
+%===============================================
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[top=3cm, bottom=3cm, left=2.54cm, right=2.54cm, marginparwidth=2mm]{geometry}
+
+% COLORS
+\usepackage[table]{xcolor}
+\definecolor{color1}{RGB}{5,161,230} % Light blue
+\definecolor{color2}{RGB}{238,50,36} % Red
+\definecolor{color3}{RGB}{0,205,0} % Light Green
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+\definecolor{blueceu}{RGB}{5,161,230} % Blue color of CEU logo
+\definecolor{greenceu}{RGB}{185,209,16} % Green color of CEU logo
+\definecolor{redceu}{RGB}{238,50,36} % Red color of CEU logo
+\definecolor{grayceu}{RGB}{111,107,83} % Gray color of CEU logo
+\definecolor{chaptergrey}{RGB}{5,161,230} % Blue color of CEU logo
+
+% MATH
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\arcsen}{arcsen}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\arctg}{arctg}
+
+% GRAPHICS
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage{multicol}
+\usepackage[inline]{enumitem}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\textsc{\textcolor{blueceu}{CEU San Pablo University}}}
+\rhead{\textsl{\textsf{\textcolor{blueceu}{Department of Applied Math and Statistics}}}}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{booktabs}
+
+
+% SECTIONS
+\usepackage{titlesec}
+\titleformat*{\section}{\normalfont\Large\bfseries\color{color1}}
+
+
+% % SOLUTIONS
+% \newif\ifsolution
+% % \solutiontrue  % Comment to hide solutions
+%
+% \newtheoremstyle{solution} % Theorem style name
+% {-5pt} % Space above
+% {7pt} % Space below
+% {\normalfont} % Body font
+% {-28pt} % Indent amount
+% {\bf} % Theorem head font
+% {\kern-11.5pt} % Punctuation after theorem head
+% {19pt} % Space after theorem head
+% {\begin{tikzpicture}
+% \draw (0,0) node [fill=color2, xshift=4mm, inner
+% sep=2pt]{\includegraphics[scale=0.3]{img/bulb}};
+% \end{tikzpicture}}
+%
+% \theoremstyle{solution}
+% \newtheorem{solutionT}{Solution}
+%
+% \RequirePackage[framemethod=default]{mdframed}
+%
+% % Solution box
+% \newmdenv[skipabove=7pt,
+% skipbelow=10pt,
+% rightline=false,
+% leftline=true,
+% topline=false,
+% bottomline=false,
+% linecolor=color2,
+% backgroundcolor=black!5,
+% innerleftmargin=5pt,
+% innerrightmargin=5pt,
+% innertopmargin=4pt,
+% innerbottommargin=5pt,
+% leftmargin=0pt,
+% rightmargin=0pt,
+% linewidth=4pt]{solBox}
+%
+% \usepackage{comment}
+% \ifsolution
+%   \newenvironment{sol}{\ifsolution\begin{solBox}\begin{solutionT}}{\end{solutionT}\end{solBox}\fi}
+% \else
+%   \excludecomment{sol}
+% \fi
+
+% PDF
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{pdfauthor={Alfredo Sánchez Alberca (asalber@ceu.es)}, pdftitle={Statistics problems} }
+\usepackage{url}
+
+\renewcommand{\floatpagefraction}{.8}
+\renewcommand{\textfraction}{.1}
+
+% SOLUTIONS SETTINGS
+\usepackage{probsoln-alf}
+\reversemarginpar
+\showshortanswers
+%\showanswers
+%\PSNrandseed{2007}
+
+\begin{document}
+\sloppy
+
+\title{\vskip 2cm
+\Huge \textbf{\textsf{\quad \textcolor{blueceu}{STATISTICS PROBLEMS}\quad}}\\
+   \vskip 1cm
+\Large \sffamily
+\begin{tabular}{rl}
+\textcolor{blueceu}{Subject:} & Mathematics\\
+\textcolor{blueceu}{Course:} & 1\textsuperscript{st}\\
+\textcolor{blueceu}{Degree:} &  Pharmacy and Biotechnology\\
+\textcolor{blueceu}{Año:} & 2022-2023\\
+\textcolor{blueceu}{Autores:} & Edgar Arribas Gimeno (\url{edgar.arribasgimeno@ceu.es})\\
+& Juan Carlos Garro Garro (\url{garro.eps@ceu.es})\\
+& Alfredo S\'anchez Alberca (\url{asalber@ceu.es})\\
+& Alberto Zaragoza de Lorite\\
+& (\url{alberto.zaragozalorite@ceu.es})
+\end{tabular}
+}
+
+\author{}
+\date{\includegraphics[scale=0.3]{img/logo_uspceu}}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\input{descriptive}
+\input{regression}
+\input{probability}
+\input{discrete_random_variables}
+\input{continuous_random_variables}
+% \input{estimacion}
+
+\section{Descriptive Statistics}
+\begin{enumerate}[leftmargin=*]
+\item\useproblem{des-57} %\newpage
+\item\useproblem{des-3a} %\newpage
+\item\useproblem{des-1a} %\newpage
+\item\useproblem{des-24a} %\newpage
+\item\useproblem{des-2a} %\newpage
+\item\useproblem{des-13a} %\newpage
+\item\useproblem{des-3b} %\newpage
+\item\useproblem{des-56a} %\newpage
+\item\useproblem{des-7} %\newpage
+\item\useproblem{des-23} %\newpage
+\item\useproblem{des-29} %\newpage
+\item\useproblem{des-58} %\newpage
+\item\useproblem{des-59} %\newpage
+\item\useproblem{des-20} %\newpage
+\item\useproblem{des-26} %\newpage
+\item\useproblem{des-60} %\newpage
+\item\useproblem{des-61} %\newpage
+\item\useproblem{des-62} %\newpage
+\end{enumerate}
+
+\section{Regression and Correlation}
+\begin{enumerate}[leftmargin=*,resume]
+\item\useproblem{reg-45} %\newpage
+\item\useproblem{reg-8a} %\newpage
+\item\useproblem{reg-6} %\newpage
+\item\useproblem{reg-14} %\newpage
+\item\useproblem{reg-3} %\newpage
+\item\useproblem{reg-39} %\newpage
+\item\useproblem{reg-10} %\newpage
+\item\useproblem{reg-11} %\newpage
+\item\useproblem{reg-18} %\newpage
+\item\useproblem{reg-46} %\newpage
+\item\useproblem{reg-32} %\newpage
+\end{enumerate}
+
+\section{Probability}
+\begin{enumerate}[leftmargin=*,resume]
+\item\useproblem{pro-33} %\newpage
+\item\useproblem{pro-46} %\newpage
+\item\useproblem{pro-47} %\newpage
+\item\useproblem{pro-48} %\newpage
+\item\useproblem{pro-2} %\newpage
+\item\useproblem{pro-3} %\newpage
+\item\useproblem{pro-5} %\newpage
+\item\useproblem{pro-8} %\newpage
+\item\useproblem{pro-9} %\newpage
+\item\useproblem{pro-11} %\newpage
+\item\useproblem{pro-13} %\newpage
+\item\useproblem{pro-55} %\newpage
+\item\useproblem{pro-16} %\newpage
+\item\useproblem{pro-51} %\newpage
+\item\useproblem{pro-52} %\newpage
+\item\useproblem{pro-53} %\newpage
+\item\useproblem{pro-54} %\newpage
+\item\useproblem{pro-49} %\newpage
+\item\useproblem{pro-19} %\newpage
+\item\useproblem{pro-44} %\newpage
+\item\useproblem{pro-25} %\newpage
+\item\useproblem{pro-50} %\newpage
+\item\useproblem{pro-37} %\newpage
+%\item \useproblem{pro-45}
+\end{enumerate}
+
+\section{Discrete Random Variables}
+\begin{enumerate}[leftmargin=*,resume]
+\item\useproblem{vad-1} %\newpage
+\item\useproblem{vad-2} %\newpage
+\item\useproblem{vad-3} %\newpage
+\item\useproblem{vad-5} %\newpage
+\item\useproblem{vad-8} %\newpage
+\item\useproblem{vad-7} %\newpage
+\item\useproblem{vad-10} %\newpage
+\item\useproblem{vad-11} %\newpage
+\item\useproblem{vad-13} %\newpage
+\item\useproblem{vad-15} %\newpage
+\item\useproblem{vad-19} %\newpage
+\item\useproblem{vad-38} %\newpage
+\item\useproblem{vad-18} %\newpage
+\item\useproblem{vad-22} %\newpage
+\item\useproblem{vad-27} %\newpage
+\item\useproblem{vad-28} %\newpage
+\end{enumerate}
+
+\section{Continuous Random Variables}
+\begin{enumerate}[leftmargin=*,resume]
+\item\useproblem{vac-3} %\newpage
+\item\useproblem{vac-6} %\newpage
+\item\useproblem{vac-37} %\newpage
+\item\useproblem{vac-38} %\newpage
+\item\useproblem{vac-39} %\newpage
+\item\useproblem{vac-11} %\newpage
+\item\useproblem{vac-10} %\newpage
+\item\useproblem{vac-16} %\newpage
+\item\useproblem{vac-13} %\newpage
+\item\useproblem{vac-17} %\newpage
+\item\useproblem{vac-40} %\newpage
+\item\useproblem{vac-41} %\newpage
+\item\useproblem{vac-34}
+\end{enumerate}
+
+\vspace{2cm}
+
+\textsc{Remark}: The problems with a ($\bigstar$) are exam problems of previous years.
+
+\end{document}
